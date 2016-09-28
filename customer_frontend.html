@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link href="css/web_store_style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/form_checker.js"></script>
+    <title>Web Store</title>
+  </head>
+
+  <body>
+    <form onsubmit="return check();" action="php/customer_backend.php" method="post">
+      Username: <input type="text" id="user"></type><br>
+      Password: <input type="password" id="pass"></type><br><br>
+
+      Choose a type of shipping:<br>
+      <input type="radio" name="shipping" value="7"> Free 7 day<br>
+      <input type="radio" name="shipping" value="3"> $5.00 three day<br>
+      <input type="radio" name="shipping" value="1"> $50.00 over night<br><br>
+
+      <button onclick="resetFunction()"> Reset </button>
+      <input type="submit" value="Submit Order">
+    </form>
+  </body>
+</html>

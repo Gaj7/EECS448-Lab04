@@ -1,0 +1,34 @@
+*{
+  font-family: arial;
+  color: lightgrey;
+}
+
+a:visited
+{
+  color: grey
+}
+
+body
+{
+  background-color: #2F3B62;
+}
+
+font.header
+{
+  font-size: 42pt;
+  /*text-decoration: underline;*/
+}
+
+div.menu
+{
+  font-size: 22pt;
+
+  margin-left: 37%;
+  /*text-align: center;*/
+  margin-top: 50;
+}
+
+div.list
+{
+  margin-left: 40px
+}
