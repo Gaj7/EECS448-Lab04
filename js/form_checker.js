@@ -1,9 +1,14 @@
 function check(){
 
   //username email check
+  //space in username
   var username = document.getElementById("user").value;
   if(username == ""){
     alert("Please enter a username.");
+    return false;
+  }
+  if(username.split(' ').length > 1){
+    alert("Invalid username, must be in the form of an email address.");
     return false;
   }
   var split1 = username.split('@');
@@ -35,6 +40,10 @@ function check(){
   }
   if(quantity1 < 0 || quantity2 < 0 || quantity3 < 0){
     alert("Please specify a non-negative quantity for each item.");
+    return false;
+  }
+  if(!(quantity1 > 0 || quantity2 > 0 || quantity3 > 0)){
+    alert("You must order at least 1 item.");
     return false;
   }
 

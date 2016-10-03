@@ -1,6 +1,6 @@
 <?php
 echo '<link href="../css/web_store_style.css" rel="stylesheet" type="text/css"/>';
-echo "Purchase Successful! Here is copy of your receipt:<br>";
+echo "Purchase Successful!<br>Here is copy of your receipt:<br><br>";
 
 $price1 = 1;
 $price2 = 5;
