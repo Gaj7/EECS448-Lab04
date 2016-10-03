@@ -1,4 +1,6 @@
 <?php
+echo '<link href="css/web_store_style.css" rel="stylesheet" type="text/css"/>';
+
 $price1 = 1;
 $price2 = 5;
 $price3 = 10;
