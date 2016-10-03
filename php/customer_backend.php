@@ -32,4 +32,5 @@ echo "<tr><tc>Item 3</tc><tc>" . $quantity3 . "</tc><tc>$10.00</tc><tc> $" . $su
 
 echo "<tr><tc>Shipping</tc><tc>" . $shipping_name . "</tc><tc> $" . $shipping_price . "</tc></tr>";
 echo "<tr><tc>Total Cost</tc><tc>$" . ($subtotal1 + $subtotal2 + $subtotal3 + $shipping_price) . "</tc></tr>";
+echo "</table>";
 ?>
