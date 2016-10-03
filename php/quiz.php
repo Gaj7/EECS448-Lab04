@@ -1,9 +1,9 @@
 <?php
-$q1_correct = 'a';
-$q2_correct = 'a';
-$q3_correct = 'a';
-$q4_correct = 'a';
-$q5_correct = 'a';
+$q1_correct = '$';
+$q2_correct = 'echo';
+$q3_correct = '//';
+$q4_correct = 'PHP: Hypertext Preprocessor';
+$q5_correct = 'An elephant';
 
 $q1_answer = $_POST["q1"];
 $q2_answer = $_POST["q2"];
