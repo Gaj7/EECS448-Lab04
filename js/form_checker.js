@@ -2,6 +2,10 @@ function check(){
 
   //username email check
   var username = document.getElementById("user").value;
+  if(username == ""){
+    alert("Please enter a username.");
+    return false;
+  }
   var split1 = username.split('@');
   if(split1.length == 2 && split1[0].length > 0 && split1[1].length > 0){
     var split2 = split1[1].split('.');
@@ -12,6 +16,12 @@ function check(){
   }
   else{
     alert("Invalid username, must be in the form of an email address.");
+    return false;
+  }
+
+  //password check
+  if(document.getElementById("pass").value == ""){
+    alert("Please enter a password.");
     return false;
   }
 
@@ -28,7 +38,16 @@ function check(){
     return false;
   }
 
-
+  //shipping check
+  var shippingSelected = false;
+  var shipping = document.getElementsByName("shipping");
+  for (var i = 0; i < shipping.length; i++)
+    if(shipping[i].checked)
+      shippingSelected = true;
+  if(!shippingSelected){
+    alert("Please select a shipping method.");
+    return false;
+  }
 
   return true;
 }
