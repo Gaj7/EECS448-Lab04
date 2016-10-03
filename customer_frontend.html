@@ -8,10 +8,26 @@
   <body>
     <form onsubmit="return check();" action="php/customer_backend.php" method="post">
       Username: <input type="text" id="user"></type><br>
-      Password: <input type="password" id="pass"></type><br><br>
+      Password: &nbsp;<input type="password" id="pass"></type><br><br>
+
+      <!-- Choose your item(s):<br>
+      <input type="checkbox" name="items" value="1"> Item 1: $1.00<br>
+      <input type="checkbox" name="items" value="2"> Item 2: $2.00<br>
+      <input type="checkbox" name="items" value="3"> Item 3: $3.00<br><br> -->
+
+      Choose your item(s):<br>
+      Item 1:<br>
+      (picture)<br>
+      $1.00 x <input type="number" name="quantity1" min="1"><br>
+      Item 2:<br>
+      (picture)<br>
+      $5.00 x <input type="number" name="quantity2" min="1"><br>
+      Item 3:<br>
+      (picture)<br>
+      $10.00 x <input type="number" name="quantity3" min="1"><br><br>
 
       Choose a type of shipping:<br>
-      <input type="radio" name="shipping" value="7"> Free 7 day<br>
+      <input type="radio" name="shipping" value="7"> Free seven day<br>
       <input type="radio" name="shipping" value="3"> $5.00 three day<br>
       <input type="radio" name="shipping" value="1"> $50.00 over night<br><br>
 
