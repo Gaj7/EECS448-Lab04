@@ -28,9 +28,9 @@ $subtotal2 = $quantity2*$price2;
 $subtotal3 = $quantity3*$price3;
 
 echo "<table><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity1 . "</td><td>$1.00</td><td> $" . $subtotal1 . "</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity2 . "</td><td>$1.00</td><td> $" . $subtotal2 . "</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity3 . "</td><td>$1.00</td><td> $" . $subtotal3 . "</td></tr>";
+echo "<tr><td>Item 1</td><td>" . $quantity1 . "</td><td>$" . $price1 . ".00</td><td> $" . $subtotal1 . "</td></tr>";
+echo "<tr><td>Item 1</td><td>" . $quantity2 . "</td><td>$" . $price2 . ".00</td><td> $" . $subtotal2 . "</td></tr>";
+echo "<tr><td>Item 1</td><td>" . $quantity3 . "</td><td>$" . $price3 . ".00</td><td> $" . $subtotal3 . "</td></tr>";
 echo "<tr></tr>";
 echo "<tr><td></td><td>Shipping</td><td>" . $shipping_name . "</td><td> $" . $shipping_price . "</td></tr>";
 echo "<tr><td></td><td></td><td>Total Cost</td><td>$" . ($subtotal1 + $subtotal2 + $subtotal3 + $shipping_price) . "</td></tr>";
