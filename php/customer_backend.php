@@ -23,7 +23,7 @@ elseif($shipping == '3'){
 }
 elseif($shipping == '1'){
   $shipping_name = "Overnight";
-  $shipping_price = 5;
+  $shipping_price = 50;
 }
 
 $subtotal1 = $quantity1*$price1;
