@@ -8,18 +8,52 @@
   <body>
     <form onsubmit="return check();" action="php/customer_backend.php" method="post">
       Username: <input type="text" id="user"></type><br>
-      Password: &nbsp;<input type="password" id="pass"></type><br><br>
+      Password: &nbsp;<input type="password" id="pass"></type>
+      <br><br><br>
 
-      Choose your item(s):<br>
-      Item 1:<br>
-      (picture)<br>
-      $1.00 x <input type="number" name="quantity1" id="quantity1" min="0"><br>
-      Item 2:<br>
-      (picture)<br>
-      $5.00 x <input type="number" name="quantity2" id="quantity2" min="0"><br>
-      Item 3:<br>
-      (picture)<br>
-      $10.00 x <input type="number" name="quantity3" id="quantity3" min="0"><br><br>
+      <!-- Choose your item(s):
+      <br><br>
+      <div style="">
+        <div style="width:33%;float:left;">
+          Item 1: Oculus Rift<br>
+          <img src="img/oculus-rift.jpg" width="90%"><br>
+          $599.00 x <input type="number" name="quantity1" id="quantity1" min="0">
+        </div>
+
+        <div style="width:33%;float:left;">
+          Item 2: HTC Vive<br>
+          <img src="img/htc-vive.jpg" width="90%"><br>
+          $799.00 x <input type="number" name="quantity2" id="quantity2" min="0">
+        </div>
+
+        <div style="width:33%;float:left;">
+          Item 3: Samsung Gear Vr<br>
+          <img src="img/gear-vr.jpg" width="90%"><br>
+          $99.00 x <input type="number" name="quantity3" id="quantity3" min="0">
+        </div>
+      </div>
+      <br><br> -->
+
+      Choose your item(s):
+      <br><br>
+      <table id="items">
+        <tr>
+          <td>Occulus Rift</td>
+          <td>HTC Vive</td>
+          <td>Samsung Gear VR</td>
+        </tr>
+        <tr>
+          <td><img src="img/oculus-rift.jpg" width="90%"></td>
+          <td><img src="img/htc-vive.jpg" width="90%"></td>
+          <td><img src="img/gear-vr.jpg" width="90%"></td>
+        </tr>
+        <tr>
+          <td>$599.00 x <input type="number" name="quantity1" id="quantity1" min="0"></td>
+          <td>$799.00 x <input type="number" name="quantity2" id="quantity2" min="0"></td>
+          <td>$99.00 x <input type="number" name="quantity3" id="quantity3" min="0"></td>
+        </tr>
+      </table>
+      <br>
 
       Choose a type of shipping:<br>
       <input type="radio" name="shipping" value="7"> Free seven day<br>

@@ -1,12 +1,29 @@
-table
+table#items
+{
+  table-layout: fixed;
+  width:100%;
+}
+
+table#receipt
 {
   border-collapse: collapse;
   text-align: center;
 }
 
-td
+td#receipt
 {
   border:solid;
   border-width: thin;
   padding: 2pt;
+}*/
+
+picture
+{
+  height=auto;
+}
+
+div
+{
+  border: solid;
+  border-width: thin;
 }
