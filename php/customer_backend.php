@@ -3,8 +3,8 @@ echo '<link href="../css/receipt.css" rel="stylesheet" type="text/css"/>';
 echo "Purchase Successful!<br>Here is copy of your receipt:<br><br>";
 
 $item1 = "Oculus Rift";
-$item1 = "HTC Vive";
-$item1 = "Gear VR";
+$item2 = "HTC Vive";
+$item3 = "Gear VR";
 $price1 = 599;
 $price2 = 799;
 $price3 = 99;

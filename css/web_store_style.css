@@ -1,7 +1,54 @@
-table
+body
+{
+  background-color: rgb(220, 220, 220);
+
+  font-family: arial;
+  color: rgb(0, 0, 0);
+  font-size: 16;
+}
+
+h1
+{
+  font-size: 50;
+}
+
+p
+{
+  font-size: 24;
+}
+
+div#up
+{
+  position: absolute;
+  top: 10;
+  right: 15;
+}
+
+table.items
 {
   table-layout: fixed;
   width:100%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+table.items td
+{
+  padding-left: 40px;
+  padding-right: 40px;
+  border-collapse: collapse;
+}
+
+table.items tbody tr:nth-child(2) td:nth-child(1) {
+   border-right: solid;
+   border-color: rgb(220, 220, 220);
+}
+
+table.items tbody tr:nth-child(2) td:nth-child(3) {
+   border-left: solid;
+   border-color: rgb(220, 220, 220);
 }
 
 img
