@@ -2,10 +2,12 @@
 echo '<link href="../css/web_store_style.css" rel="stylesheet" type="text/css"/>';
 echo "Purchase Successful!<br>Here is copy of your receipt:<br><br>";
 
-$price1 = 1;
-$price2 = 5;
-$price3 = 10;
-
+$item1 = "Oculus Rift";
+$item1 = "HTC Vive";
+$item1 = "Gear VR";
+$price1 = 599;
+$price2 = 799;
+$price3 = 99;
 $quantity1 = $_POST["quantity1"];
 $quantity2 = $_POST["quantity2"];
 $quantity3 = $_POST["quantity3"];
@@ -28,10 +30,10 @@ $subtotal1 = $quantity1*$price1;
 $subtotal2 = $quantity2*$price2;
 $subtotal3 = $quantity3*$price3;
 
-echo "<table id='receipt'><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity1 . "</td><td>$" . $price1 . ".00</td><td> $" . $subtotal1 . "</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity2 . "</td><td>$" . $price2 . ".00</td><td> $" . $subtotal2 . "</td></tr>";
-echo "<tr><td>Item 1</td><td>" . $quantity3 . "</td><td>$" . $price3 . ".00</td><td> $" . $subtotal3 . "</td></tr>";
+echo "<table class='receipt'><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
+echo "<tr><td>" . $item1 . "</td><td>" . $quantity1 . "</td><td>$" . $price1 . ".00</td><td> $" . $subtotal1 . "</td></tr>";
+echo "<tr><td>" . $item2 . "</td><td>" . $quantity2 . "</td><td>$" . $price2 . ".00</td><td> $" . $subtotal2 . "</td></tr>";
+echo "<tr><td>" . $item3 . "</td><td>" . $quantity3 . "</td><td>$" . $price3 . ".00</td><td> $" . $subtotal3 . "</td></tr>";
 echo "<tr></tr>";
 echo "<tr><td></td><td>Shipping</td><td>" . $shipping_name . "</td><td> $" . $shipping_price . "</td></tr>";
 echo "<tr><td></td><td></td><td>Total Cost</td><td>$" . ($subtotal1 + $subtotal2 + $subtotal3 + $shipping_price) . "</td></tr>";

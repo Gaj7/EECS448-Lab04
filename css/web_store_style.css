@@ -4,26 +4,20 @@ table#items
   width:100%;
 }
 
-table#receipt
+table.receipt table
 {
   border-collapse: collapse;
   text-align: center;
 }
 
-td#receipt
+table.receipt td
 {
   border:solid;
   border-width: thin;
   padding: 2pt;
-}*/
-
-picture
-{
-  height=auto;
 }
 
-div
+img
 {
-  border: solid;
-  border-width: thin;
+  height: auto;
 }
