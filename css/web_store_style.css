@@ -1,20 +1,7 @@
-table#items
+table
 {
   table-layout: fixed;
   width:100%;
-}
-
-table.receipt table
-{
-  border-collapse: collapse;
-  text-align: center;
-}
-
-table.receipt td
-{
-  border:solid;
-  border-width: thin;
-  padding: 2pt;
 }
 
 img

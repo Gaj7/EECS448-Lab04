@@ -1,5 +1,5 @@
 <?php
-echo '<link href="../css/web_store_style.css" rel="stylesheet" type="text/css"/>';
+echo '<link href="../css/receipt.css" rel="stylesheet" type="text/css"/>';
 echo "Purchase Successful!<br>Here is copy of your receipt:<br><br>";
 
 $item1 = "Oculus Rift";
